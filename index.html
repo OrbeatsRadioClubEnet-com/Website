@@ -32,17 +32,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <nav class="site-navigation navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;" role="navigation">
-		
+	 <nav class="site-navigation navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;" role="navigation">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
+		    <img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
+		  </a>
 		
 	    <div class="container">
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-          <a class="navbar-brand" href="index.html">
-			<img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
-		    <img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
-		  </a>
+          
 		  <script>
 			window.addEventListener('scroll', function() {
 				var logo1 = document.getElementById('logo1');
@@ -64,13 +64,28 @@
 	        	<li class="nav-item nav-link"><a href="index.html#activities" class="nav-link">Activities</a></li>
 				<li class="nav-item nav-link"><a href="index.html#contact" class="nav-link">Contact</a></li>
 				<li class="nav-item nav-link"><a href="index.html#team" class="nav-link">Team</a></li>
-	        	<li class="nav-item nav-link"><a href="gallery.html" class="nav-link">Gallery</a></li>
+	        	<li class="nav-item nav-link" style="padding-right: 100px;"><a href="gallery.html" class="nav-link">Gallery</a></li>
 	        	
 	          
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
+	  <style>
+		.navbar {
+		  list-style: none; /* Supprime les puces */
+		  display: flex; /* Aligne les éléments horizontalement */
+		  padding: 0;
+		  margin: 0;
+		}
+	
+		.navbar li {
+		  margin-right: 15px; /* Ajoute un espacement entre les éléments */
+		}
+		
+	  
+		
+	  </style>
     <!-- END nav -->
     
     <section class="hero-wrap js-fullheight" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
