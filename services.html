@@ -32,53 +32,68 @@
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;">
-      
-      
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-          </button>
-            <a class="navbar-brand" href="index.html">
-        <img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
-          <img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
-        </a>
-        <script>
-        window.addEventListener('scroll', function() {
-          var logo1 = document.getElementById('logo1');
-          var logo2 = document.getElementById('logo2');
-          
-          if (window.scrollY > 50) { // Change 50 to the number of pixels you want to scroll
-            logo1.style.display = 'none';
-            logo2.style.display = 'block';
-          } else {
-            logo1.style.display = 'block';
-            logo2.style.display = 'none';
-          }
-        });
-      </script>
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="index.html#activities" class="nav-link">Activities</a></li>
-          <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="index.html#team" class="nav-link">Team</a></li>
-              <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <nav class="site-navigation navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;" role="navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
+            <img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
+          </a>
+        
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
               
-              
-            </ul>
+          <script>
+          window.addEventListener('scroll', function() {
+            var logo1 = document.getElementById('logo1');
+            var logo2 = document.getElementById('logo2');
+            
+            if (window.scrollY > 50) { // Change 50 to the number of pixels you want to scroll
+              logo1.style.display = 'none';
+              logo2.style.display = 'block';
+            } else {
+              logo1.style.display = 'block';
+              logo2.style.display = 'none';
+            }
+          });
+        </script>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active nav-link"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item nav-link"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item nav-link"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item nav-link"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item nav-link"><a href="index.html#team" class="nav-link">Team</a></li>
+                <li class="nav-item nav-link" style="padding-right: 100px;"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                
+                
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    <!-- END nav -->
+        </nav>
+        <style>
+        .navbar {
+          list-style: none; /* Supprime les puces */
+          display: flex; /* Aligne les éléments horizontalement */
+          padding: 0;
+          margin: 0;
+        }
+      
+        .navbar li {
+          margin-right: 15px; /* Ajoute un espacement entre les éléments */
+        }
+        
+        
+        
+        </style>
+        <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h2 class="mb-0 bread">Activities</h2>
+            <h2 class="mb-0 bread">Services</h2>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Services <i class="ion-ios-arrow-round-forward"></i></span></p>
           </div>
         </div>
@@ -87,94 +102,133 @@
     
     <section class="services-section ftco-section">
       <div class="container">
-      	<div class="row justify-content-center pb-3" data-aos="fade-up">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<span class="subheading">Check More About</span>
-            <h2 class="mb-4">Our Activities</h2>
-            <p>Explore our vibrant range of activities designed to engage, entertain, and enrich our community—dive into media coverage, podcasts, events, and more!</p>
+      	
+        
+
+        <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+            
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.radio.enetcom/"><span class="fas fa-camera-retro" style="padding-left: 10px; padding-top: 10px;"></span> Photographie</a></h3>
+            
+         
+
+            <div class="player">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+            
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="https://www.facebook.com/RadioEnetcom"><span class="fas fa-film" style="padding-left: 10px; padding-top: 20px;"></span> Video Cinematique</a></h3>
+            
+            
+
+            <div class="player">
+              
+            </div>
           </div>
         </div>
         
+        
 
-    
+
+         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+        
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="#"><span class="fas fa-broadcast-tower" style="padding-left: 10px; padding-top: 10px;"></span> Broadcast</a></h3>
+            
+            
+
+
+            <div class="player">
+              
+            </div>
+
+          </div>
+        </div>
         
         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+            
+          <div class="text">
+
+            <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.radio.enetcom/"><span class="fas fa-video" style="padding-left: 10px; padding-top: 10px;"></span> Reels</a></h3>
+            
+         
+
+            <div class="player">
+              
+            </div>
+          </div>
+        </div>
+
+         
+
+
+          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+            
+            <div class="text">
+
+              <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.radio.enetcom/"><span class="icon-instagram" style="padding-left: 10px; padding-top: 10px;"></span> Stories</a></h3>
+              
+           
+
+              <div class="player">
+                
+              </div>
+            </div>
+          </div>
+
+
           
-          <div class="text">
-
-            <h3 class="font-weight-light"><a href="https://www.linkedin.com/company/orbeats-club-radio-enet-com/"><span class="fas fa-video" style="padding-left: 10px; padding-top: 10px;"></span> Media Coverage</a></h3>
+          
+          
+          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
             
-            <p class="mb-4" style="padding-left: 10px;">Dive into our media coverage, where we showcase our events, interviews, and features across various platforms. Discover how Orbeats has been making waves in the community and beyond, as we share stories that reflect our mission and impact.</p>
+            <div class="text">
 
-            <div class="player">
+              <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.radio.enetcom/"><span class="fas fa-microphone" style="padding-left: 10px; padding-top: 10px;"></span> Micro-Trottoir</a></h3>
               
+           
+
+              <div class="player">
+                
+              </div>
             </div>
-
           </div>
-        </div>
 
-
-         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
-        
-          <div class="text">
-
-            <h3 class="font-weight-light"><a href="#"><span class="fab fa-spotify" style="padding-left: 10px; padding-top: 10px;"></span> Podcasts <i>"Coming Soon!"</i></a></h3>
-            
-            <p class="mb-4" style="padding-left: 10px;">Tune in to our latest podcasts, featuring insightful discussions, engaging interviews, and a variety of topics that resonate with our community. Each episode brings you closer to the voices and stories that define Orbeats, making it a perfect companion for your daily commute or relaxation time.</p>
-
-
-            <div class="player">
-              
-            </div>
-
-          </div>
-        </div>
-
-
-         <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
+          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
             
             <div class="text">
 
               <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.events/"><span class="fas fa-calendar-alt" style="padding-left: 10px; padding-top: 10px;"></span> Events <i>(Gala,Camping)</i></a></h3>
               
-              <p class="mb-4" style="padding-left: 10px;">Stay informed about our upcoming events, workshops, and gatherings designed to foster connection and collaboration among our members. Whether it’s a fun social event or an informative workshop, there’s something for everyone to enjoy and participate in.</p>
+             
 
               <div class="player">
                 
               </div>
             </div>
           </div>
-
-
+          
           <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
-            
+          
             <div class="text">
-
-              <h3 class="font-weight-light"><a href="https://www.instagram.com/orbeats.radio.enetcom/"><span class="icon-instagram" style="padding-left: 10px; padding-top: 10px;"></span> Instagram <i>(Reels)</i></a></h3>
+  
+              <h3 class="font-weight-light"><a href="https://www.linkedin.com/company/orbeats-club-radio-enet-com/"><span class="fas fa-tv" style="padding-left: 10px; padding-top: 10px;"></span> Media Coverage</a></h3>
               
-              <p class="mb-4" style="padding-left: 10px;">Follow us on Instagram for real-time updates, vibrant photos, and engaging stories from our activities. Get a glimpse behind the scenes and witness the energy of our events, as we capture the essence of our community in every post.</p>
-
+            
+  
               <div class="player">
                 
               </div>
+  
             </div>
           </div>
-
-
-          <div class="d-block d-md-flex podcast-entry bg-white mb-5" data-aos="fade-up" style="border-radius: 15px;">
-            
-            <div class="text">
-
-              <h3 class="font-weight-light"><a href="https://www.facebook.com/RadioEnetcom"><span class="icon-facebook" style="padding-left: 10px; padding-top: 20px;"></span> Facebook <i>(Potos,Live)</i></a></h3>
-              
-              <p class="mb-4" style="padding-left: 10px;">Like us on Facebook to remain connected with our community and stay updated on the latest news and happenings. Our Facebook page serves as a hub for announcements, discussions, and interactions with fellow members. Join us online and be part of our vibrant community!</p>
-
-              <div class="player">
-                
-              </div>
-            </div>
-          </div>
-
 
       </div>
     
@@ -201,23 +255,19 @@
             </div>
             <div class="col-md">
               <div class="ftco-footer-widget mb-4 ml-md-5">
-                <h2 class="ftco-heading-2">Information</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-2 d-block">FAQs</a></li>
-                  <li><a href="#" class="py-2 d-block">Privacy</a></li>
-                  <li><a href="#" class="py-2 d-block">Terms Condition</a></li>
-                </ul>
+                
               </div>
             </div>
             <div class="col-md">
                <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="py-2 d-block">Home</a></li>
-                  <li><a href="#" class="py-2 d-block">Activities</a></li>
-                  <li><a href="#" class="py-2 d-block">Gallery</a></li>
-                  <li><a href="#" class="py-2 d-block">About</a></li>
-                  <li><a href="#" class="py-2 d-block">Contact</a></li>
+                  <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                  <li><a href="index.html#about" class="py-2 d-block">About</a></li>
+                  <li><a href="index.html#activities" class="py-2 d-block">Activities</a></li>
+                  <li><a href="index.html#contact" class="py-2 d-block">Contact</a></li>
+                  <li><a href="index.html#team" class="py-2 d-block">Team</a></li>
+          <li><a href="gallery.html" class="py-2 d-block">Gallery</a></li>
                 </ul>
               </div>
             </div>
@@ -244,30 +294,30 @@
           </div>
         </div>
       </footer>
+      
     
   
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+      
+    </body>
+  </html>
