@@ -32,46 +32,61 @@
 		<link rel="stylesheet" href="css/style.css">
 	  </head>
 	  <body>
-		  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;">
-			
-			
-			<div class="container">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			  </button>
-			  <a class="navbar-brand" href="index.html">
-				<img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
-				<img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
-			  </a>
-			  <script>
-				window.addEventListener('scroll', function() {
-					var logo1 = document.getElementById('logo1');
-					var logo2 = document.getElementById('logo2');
-					
-					if (window.scrollY > 50) { // Change 50 to the number of pixels you want to scroll
-						logo1.style.display = 'none';
-						logo2.style.display = 'block';
-					} else {
-						logo1.style.display = 'block';
-						logo2.style.display = 'none';
-					}
-				});
-			</script>
-			  <div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="index.html#activities" class="nav-link">Activities</a></li>
-					<li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="index.html#team" class="nav-link">Team</a></li>
-					<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-					
-				  
-				</ul>
-			  </div>
-			</div>
-		  </nav>
-    <!-- END nav -->
+		  <nav class="site-navigation navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="max-height: 100px;" role="navigation">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.gif" alt="Orbeats Logo1" class="navbar-logo" id="logo1" style="max-height: 150px; padding-top: 15px;">
+            <img src="images/logonoir.gif" alt="Logo" id="logo2" class="navbar-logo" id="logo2" style="max-height: 150px; padding-top: 15px;display:none;">
+          </a>
+        
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+              
+          <script>
+          window.addEventListener('scroll', function() {
+            var logo1 = document.getElementById('logo1');
+            var logo2 = document.getElementById('logo2');
+            
+            if (window.scrollY > 50) { // Change 50 to the number of pixels you want to scroll
+              logo1.style.display = 'none';
+              logo2.style.display = 'block';
+            } else {
+              logo1.style.display = 'block';
+              logo2.style.display = 'none';
+            }
+          });
+        </script>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active nav-link"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item nav-link"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item nav-link"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item nav-link"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item nav-link"><a href="index.html#team" class="nav-link">Team</a></li>
+                <li class="nav-item nav-link" style="padding-right: 100px;"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <style>
+        .navbar {
+          list-style: none; /* Supprime les puces */
+          display: flex; /* Aligne les éléments horizontalement */
+          padding: 0;
+          margin: 0;
+        }
+      
+        .navbar li {
+          margin-right: 15px; /* Ajoute un espacement entre les éléments */
+        }
+        
+        
+        
+        </style>
+        <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
