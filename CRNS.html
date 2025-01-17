@@ -72,20 +72,66 @@
           </div>
         </nav>
         <style>
-        .navbar {
-          list-style: none; /* Supprime les puces */
-          display: flex; /* Aligne les éléments horizontalement */
-          padding: 0;
-          margin: 0;
-        }
-      
-        .navbar li {
-          margin-right: 15px; /* Ajoute un espacement entre les éléments */
-        }
-        
-        
-        
-        </style>
+			.navbar-brand {
+			  margin-left: 15px !important; /* Push logo to right */
+			  padding: 0;
+			}
+		  
+			.navbar-logo {
+			  max-height: 150px;
+			  padding-top: 15px;
+			}
+			.navbar-collapse {
+		background-color: white !important;
+	  }
+			/* Mobile styles */
+			@media screen and (max-width: 768px) {
+			  .navbar-brand {
+				display: none;
+			  }
+			  .navbar-collapse {
+		background-color: white !important;
+	  }
+			  .navbar.bg-dark {
+		  background-color: white !important;
+		}
+		.ftco-navbar-light .navbar-toggler {
+		border: none;
+		color:black !important;
+		cursor: pointer;
+		padding-right: 0;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: .1em;
+	}
+	.navbar-nav .nav-item .nav-link {
+    color: black !important; /* Change text color to black */
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 16px; /* Increase font size */
+    font-weight: 500; /* Make text slightly bold */
+    border-bottom: 1px solid #eee; /* Add a subtle border between items */
+    transition: all 0.3s ease; /* Smooth hover effect */
+	margin-left: 25px;
+  }
+
+  /* Hover effect for menu items */
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+    color: #007bff !important; /* Change text color on hover */
+    padding-left: 25px; /* Add a slight indent on hover */
+  }
+			  
+			  .navbar-logo {
+				display: none;
+			  }
+		  
+			  /* Adjust hamburger menu position */
+			  .navbar-toggler {
+				margin-left: 15px;
+				color: black;
+			  }
+			}
+		  </style>
         <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-1.jpg');" data-stellar-background-ratio="0.5">
