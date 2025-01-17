@@ -72,20 +72,45 @@
           </div>
         </nav>
         <style>
-        .navbar {
-          list-style: none; /* Supprime les puces */
-          display: flex; /* Aligne les éléments horizontalement */
-          padding: 0;
-          margin: 0;
-        }
-      
-        .navbar li {
-          margin-right: 15px; /* Ajoute un espacement entre les éléments */
-        }
-        
-        
-        
-        </style>
+		.navbar-brand {
+		  margin-left: 15px !important; /* Push logo to right */
+		  padding: 0;
+		}
+	  
+		.navbar-logo {
+		  max-height: 150px;
+		  padding-top: 15px;
+		}
+	  
+		/* Mobile styles */
+		@media screen and (max-width: 768px) {
+		  .navbar-brand {
+			display: none;
+		  }
+		  .navbar.bg-dark {
+      background-color: white !important;
+    }
+	.ftco-navbar-light .navbar-toggler {
+    border: none;
+    color:black !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+		  
+		  .navbar-logo {
+			display: none;
+		  }
+	  
+		  /* Adjust hamburger menu position */
+		  .navbar-toggler {
+			margin-left: 15px;
+			color: black;
+		  }
+		}
+	  </style>
         <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-1.jpg');" data-stellar-background-ratio="0.5">
