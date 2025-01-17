@@ -72,19 +72,44 @@
 	    </div>
 	  </nav>
 	  <style>
-		.navbar {
-		  list-style: none; /* Supprime les puces */
-		  display: flex; /* Aligne les éléments horizontalement */
+		.navbar-brand {
+		  margin-left: 15px !important; /* Push logo to right */
 		  padding: 0;
-		  margin: 0;
 		}
-	
-		.navbar li {
-		  margin-right: 15px; /* Ajoute un espacement entre les éléments */
-		}
-		
 	  
-		
+		.navbar-logo {
+		  max-height: 150px;
+		  padding-top: 15px;
+		}
+	  
+		/* Mobile styles */
+		@media screen and (max-width: 768px) {
+		  .navbar-brand {
+			display: none;
+		  }
+		  .navbar.bg-dark {
+      background-color: white !important;
+    }
+	.ftco-navbar-light .navbar-toggler {
+    border: none;
+    color:black !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+		  
+		  .navbar-logo {
+			display: none;
+		  }
+	  
+		  /* Adjust hamburger menu position */
+		  .navbar-toggler {
+			margin-left: 15px;
+			color: black;
+		  }
+		}
 	  </style>
     <!-- END nav -->
     
